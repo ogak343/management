@@ -17,3 +17,5 @@ jwt:
   secret: 946a2edf6e5d8f7a35e7a00d1f853bc1cc622de06794f8d9adf833e76db1b7118e23b7
   access: 1800000
   refresh: 1296000000
+server:
+  port: 8080
