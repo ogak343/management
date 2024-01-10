@@ -71,7 +71,7 @@ public class JwtServiceImpl implements JwtService {
     @Override
     public void authenticate(String header) {
 
-        var userId = extractUsername(header);
+        var userId = extractUsername(header.substring(8));
 
         if (userId != null) {
 
