@@ -31,8 +31,6 @@ public class JwtFilter extends OncePerRequestFilter {
 
         var header = request.getHeader(AUTHORIZATION);
 
-        log.info("Request header : {}", header);
-
         Optional.ofNullable(header).ifPresent(jwtService::authenticate);
 
         filterChain.doFilter(request, response);
